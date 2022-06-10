@@ -2,16 +2,16 @@ function changeImg(num)
     {
     // link array holds src text for img attribute
     const link = [];       
-    link[0]="../images/players/adam-double-a.jpg";
-    link[1]="../images/players/alan-cracker-jack.jpg";
-    link[2]="../images/players/antonio-jackrabbit.jpg";
-    link[3]="../images/players/brian-teach.jpg";  
-    link[4]="../images/players/daniel-clutch.jpg";
-    link[5]="../images/players/david-eyes.jpg";
-    link[6]="../images/players/ric-lucky.jpg";
-    link[7]="../images/players/sherman-snake-oil.jpg";
-    link[8]="../images/players/steve-chef.jpg";
-    link[9]="../images/players/steve-iron-head.jpg";
+    link[0]="images/players/adam-double-a.jpg";
+    link[1]="images/players/alan-cracker-jack.jpg";
+    link[2]="images/players/antonio-jackrabbit.jpg";
+    link[3]="images/players/brian-teach.jpg";  
+    link[4]="images/players/daniel-clutch.jpg";
+    link[5]="images/players/david-eyes.jpg";
+    link[6]="images/players/ric-lucky.jpg";
+    link[7]="images/players/sherman-snake-oil.jpg";
+    link[8]="images/players/steve-chef.jpg";
+    link[9]="images/players/steve-iron-head.jpg";
     //image holds the img element
     var image = document.getElementById("rosterImg");
     //newLink holds src text
