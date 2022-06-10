@@ -1,0 +1,528 @@
+/* CSS Document */
+
+/*Web Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+
+/*Basics*/
+
+body {background-color: #9F2B2F;
+      color: black;}
+
+#wrapper {background-color: white;
+          padding-left: 0;
+          padding-right: 0;}
+
+/*Header*/
+
+#skip {position:absolute;
+       left:-10000px;
+       top:auto;
+       width:1px;
+       height:1px;
+       overflow:hidden;
+       color: black;
+       font-weight: bold;}
+ 
+#skip:focus {position:static;
+             width:auto;
+             height:auto;
+             border: medium solid black;}
+
+header {padding: .25rem 0;
+        margin: 1rem 0 0 0;
+        background-color: #9F2B2F;}
+
+h1 {text-align: center;
+    font-family: "UnifrakturCook";
+    background-color: white;
+    padding: .25rem 0;
+    margin: 0;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);}
+
+h1 a {text-decoration: none;}
+
+/*Nav*/
+
+nav ul {width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-family: "Balthazar";
+        font-size: 1.5em;
+        font-weight: bold;
+        box-shadow: 0  8px 10px -8px black, 
+                    0 -8px 10px -8px black;}
+
+.nav-link, .nav-link:link,
+.nav-link:visited, .nav-link:focus,
+.nav-link:hover, .nav-link:active {color: black;}
+
+.nav-link:focus, .nav-link:hover {transform: scale(1.1);
+                                  text-shadow: 0 0 1px #333;}
+
+.dropdown-menu {border: medium solid #9F2B2F;
+                border-radius: 0;
+                font-weight: bold;
+                font-size: 1.1rem;}
+    
+a.nav-link.dropdown-toggle::after {position: relative;
+top: 5px;}
+
+.dropdown-item:hover, .dropdown-item:focus {color: black;
+                                            background-color:  antiquewhite;
+                                            font-weight: bold;
+                                            text-shadow: 0 0 1px #333;}
+
+.dropdown-item.active, .dropdown-item:active {color: black;
+                                              background-color: antiquewhite;
+                                              font-weight: bold;
+                                              text-shadow: 0 0 1px #333;}
+
+/*Main*/
+
+main {font-family: "Balthazar";
+      font-size: 1.1em;}
+
+main div.row {margin: 1rem;}
+
+h2 {text-align: center;
+    font-family: "Balthazar";
+    margin: .5rem auto;
+    border-bottom: medium solid black;
+    font-weight: bold;}
+
+h3 {text-align: center;
+    font-family: "Balthazar";
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: antiquewhite;
+    padding: .25rem 0;}
+
+.banner {border-top: solid 4px #9F2B2F;
+         border-bottom: solid 4px #9F2B2F;
+         margin-top: 1rem;}
+main p {font-size: 1.1em;}
+main button {background-color: #9F2B2F;
+             padding: .25rem .5rem;
+             border-radius: 5px;
+             border: thin solid black;
+             box-shadow: 2px 2px 2px 2px grey;}
+
+main button:focus, main button:hover {transform: scale(.97);
+                                      box-shadow: 2px 2px 3px 3px grey;}
+
+main button a, main button a:link,
+main button a:visited, main button a:focus,
+main button a:hover, main button a:active {color: black;
+                                           font-weight: bold;
+                                           text-decoration: none;}
+main li {margin: .75rem 0;}
+
+a, a:link,
+a:visited, a:focus,
+a:hover, a:active {color: black;}
+
+main div.row {margin: 1rem;}
+
+.link {font-weight: bold;}
+
+/*FAQ Page*/
+
+.faq-box {width: 80%;
+          margin: 0 auto;
+          border: medium solid black;
+          padding: .5rem 1rem;
+          background-color: #9F2B2F;}
+
+details {background-color: white;
+         font-size: 1.1em;
+         font-weight: bold;
+         border: medium solid black;
+         border-bottom: none;
+         margin-bottom: 1rem;
+         padding: .5rem;
+         box-shadow: 3px 3px 4px black, -3px -3px 4px rgba(7, 13, 13, .25);}
+
+details[open] {border: thick solid black;}
+
+details > p {padding: 0 1.5rem;
+             margin: 0;
+             font-size: 1em;
+             font-weight: normal;} 
+
+details > ul {padding: 0 1.5rem;
+              margin-left: 1rem;
+              font-size: 1em;
+              font-weight: normal;}
+
+details:last-of-type {border-bottom: medium solid black;}
+
+summary {font-size: 1.15em;}
+
+summary:focus, summary:hover {font-size: 1.175em;}
+
+summary::marker {color: #9F2B2F;}
+
+details > dl {margin: .25rem 0 0 1rem;
+              font-size: 1em;
+              font-weight: normal;}
+
+.def {font-style: italic;}
+
+dt, dd {display: inline-block;}
+
+dt {padding-left: .5rem;
+    font-weight: bold;}
+
+dd {font-weight: normal;}
+
+dfn {font-style: normal;}
+
+.extra-space {margin-top: .75rem}
+
+/*Schedule Page*/
+
+table {border: 4px solid black;
+       border-collapse: collapse;
+       font-weight: bold;
+       text-align: center;}
+
+.table-box {width: 80%; margin: 0 auto;}
+
+tr {border-bottom: 2px solid #9F2B2F;}
+
+tr:nth-of-type(even) {background-color: antiquewhite;}
+
+th {border-right: medium solid black;
+    border-bottom: medium solid black;
+    padding: 0 0.5rem;
+    background-color: antiquewhite;
+    font-size: 1.2em;}
+
+td {border-right: 2px solid black;
+    padding: 0 .5rem;}
+
+tr td:nth-of-type(4) {text-decoration: underline;
+                      cursor: pointer;}
+
+.dir-box {border: medium solid #9F2B2F;
+          font-weight: bold;
+          background-image: linear-gradient(white, antiquewhite);}
+
+#mapBox {display: flex;
+         justify-content: flex-end;
+         margin: .5rem 0;}
+
+#addBox {margin: .5rem 0;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;}
+
+/*Roster Page*/
+
+.player-list {list-style-type: none;
+              border: medium solid black;
+              padding: 0;
+              margin-bottom: 0;
+              height: 100%;}
+
+.player-list li {border-bottom: 2px solid black;
+                 padding: .75rem 1rem;
+                 margin: 0;
+                 text-align: center;}
+
+.player-list a {width: 100%;
+                display: block;
+                text-decoration: none;}
+
+.player-list li:last-of-type {border-bottom: none;}
+
+.player-list li:hover, .player-list li:focus {background-color:  antiquewhite;
+                                              cursor: pointer;}
+
+.active {background-image: linear-gradient( #9F2B2F 5%, antiquewhite 5%, antiquewhite 90%, #9F2B2F 95%);
+         font-weight: bold;}
+
+
+.player-box {background-color: antiquewhite;
+             border: medium solid black;
+             padding: 1rem;
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             height: 100%;
+			 max-height: 528px;}
+
+.player-img {border: medium solid black;
+             max-height: 390px;
+             overflow-y: hidden;}
+
+#playerBlurb {border: medium solid black;
+              background-color: white;
+              padding: .5rem .75rem;
+              flex: 1;
+              margin-top: 1rem;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              align-items: center;}
+
+#playerBlurb p {padding: 0;
+                margin: 0;}
+
+/*Gallery Directory Page*/
+
+.folder {background-color: antiquewhite;
+         text-align: center;
+         font-weight: bold;
+         text-decoration: none;
+         outline: medium solid #9F2B2F;
+         box-shadow: 2px 2px 2px 2px grey;
+         border-radius: 5px;
+         font-size: 1.2rem;
+         margin: 0 1rem .5rem 1rem;
+         display: block;
+         padding: 1rem 0;}
+
+.folder:focus, .folder:hover {transform: scale(.98);
+                              box-shadow: 2px 2px 3px 3px grey;}
+
+.gal-event {font-size: 90%;}
+
+/*Gallery Slideshow Pages*/
+
+.carousel {border: 2px solid #9F2B2F;
+           background-color: black;
+           padding: 0;}
+
+.carousel-indicators {top: 98.5%;
+                      width: 100%;
+                      margin: 0 auto;}
+
+
+.carousel-indicators [data-bs-target] {border: none;
+                                       background-color: white;
+                                       height: .25rem;
+                                       border-radius: 0;}
+
+.carousel-indicators .active {background-image: none;}
+
+.carousel-control-prev,
+.carousel-control-next {width: 5%;
+                        box-shadow: none;}
+
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {box-shadow: none;
+                              opacity: 0.9;}
+
+.carousel-control-prev {left: -1%;}
+
+.carousel-control-next {right: -1%;}
+
+.carousel-control-prev-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z' /%3e%3c/svg%3e");}
+
+.carousel-control-next-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z' /%3e%3c/svg%3e");}
+
+.photo-credit {text-align: center;
+               margin-bottom: 0;}
+
+/*Game Report Pages*/
+
+.report table {border: solid 3px black;
+               border-bottom-left-radius: 5px;
+               border-bottom-right-radius: 5px;
+               width: 100%;}
+
+.report caption {display: none;}
+
+.report th {background-image: linear-gradient( antiquewhite 5%, white 95%, antiquewhite 90%);
+            font-size: 1.1em;}
+
+.report td {background-color: white;}
+
+.author {margin-bottom: 0;}
+
+
+/*Contact Us Page*/
+
+.contact-banner {font-size: 1.5rem;}
+
+#form-mod {border: medium solid black;
+margin: 0 auto 1em auto;
+width: 80%;}
+
+#form-box {background-color: #9F2B2F;
+           display: flex;
+           flex-direction: column;}
+
+label {background-color: antiquewhite;
+       width: 100%;
+       padding: .25em;
+       border-radius: 5px 5px 0 0;
+       margin-top: 1em;
+       border: 2px solid black;
+       border-bottom: none;
+       font-weight: bold;
+       text-align: center;}
+
+.form-control {border: 2px solid black;
+               text-align: center;
+               color: black;
+               border-radius: 0 0 5px 5px;}
+
+.form-control:focus {color: black;
+                     border-color: black;
+                     box-shadow: 0 0 1px 1px black;}
+
+.form-select {color: black;
+              border: 2px solid black;
+              border-radius: 0 0 5px 5px;
+              background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+              text-align: center;}
+
+.form-select:focus {border: 2px solid black;
+                    box-shadow: 0 0 1px 1px black;}
+
+option {text-align: center;}
+
+#submit {width :100%;
+         margin: 1em auto;
+         font-weight: bold;
+         border: 2px solid black;
+         box-shadow: 1px 1px 1px 0px #111;
+         background-color: antiquewhite;}
+
+#submit:focus, #submit:hover {transform: scale(.99);
+                              box-shadow: 1px 1px 1px 1px #111;}
+ 
+
+#form-img-box {background-color: #9F2B2F;
+               padding: 0;
+               max-height: 433px;}
+
+#form-img {height: 100%;
+           width: 100%;
+           max-height: 433px;}
+
+/*Footer*/
+
+footer {font-family: Cambria, "Liberation Serif", Times, "Times New Roman", "serif";
+        text-align: center;
+        border-top: 2px solid black;
+        padding: .5rem 0;
+        font-size: .95em;}
+
+/*Media Queries*/
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px)
+    {
+    /*About Plowboys Page*/
+    .ctr-btn {margin: 0 auto 1.5rem auto;
+              display: block;}
+        
+    /*Roster Page*/
+    .roster-content {flex-direction: column-reverse}
+    .player-box {margin-bottom: 1rem;}
+        
+    /*Contact Us Page*/
+    #form-mod {width: 90.5%;}
+    }
+
+/*Medium devices (tablets, less than 768px)*/
+@media (max-width: 767.98px)
+    {
+    
+    /*FAQ Page*/
+
+    .faq-box {width: 100%;}
+        
+    }
+        
+/*Small devices (phones, less than 576px)*/
+@media (max-width: 575.98px)
+    {
+
+    /*Header & Nav*/
+
+    header, nav {padding-bottom: 0;}
+
+    nav button:hover, nav button:focus {margin-bottom: .5rem;}
+
+    nav ul {text-align: center;
+            box-shadow: none;}
+
+    nav li {border-bottom: medium solid black;
+            box-shadow: 0  8px 5px -8px black, 
+                        0 -8px 5px -8px black;}
+
+    nav li:first-of-type {border-top: medium solid black;}
+
+    .dropdown-item {text-align: center;}
+
+    /*Main*/
+
+    main .col-sm {margin-bottom: 1rem;}  
+
+    main button {width: 100%;
+                 margin-bottom: 1rem;}
+
+    /*Schedule Page*/
+
+    table, thead,
+    tbody, th,
+    td, tr {display: block;}
+
+    thead {position:absolute;
+           left:-10000px;
+           top:auto;
+           width:1px;
+           height:1px;
+           overflow:hidden;}
+        
+    tr {padding-top: 1rem;}
+        
+    td {border-right: none;}
+      
+    tr:last-of-type {border-bottom: none;}
+        
+    tr td:nth-of-type(5), tr td:last-of-type {display: inline-block;
+                                              margin: .5rem 0 0;}
+        
+    td svg {margin-bottom: 1.5rem;}
+        
+    .dir-box {display: flex;
+              flex-direction: column-reverse;
+               width: auto;}
+    
+    #addBox {text-align: center;
+             margin: .75rem 0 0 0;}
+    
+    #mapBox {padding: .5rem 0; background-color: #9F2B2F;}
+        
+    iframe {margin: 0 auto;}
+        
+    /*Game Report Pages*/  
+        
+    .report caption {display: block;
+                     color: black;
+                     text-align: center;
+                     background-image: linear-gradient(antiquewhite 5%, white 95%, antiquewhite 90%, #9F2B2F 95%);
+                     font-size: 1.1em;}
+    
+    .report tr {background-color: white;}
+        
+    .report div:last-of-type {margin-bottom :0;}
+        
+    .report td:last-of-type {margin-bottom: .5em;}
+        
+    .report p:first-of-type {margin-top: 0; padding-top: 0;}
+    
+    /*Contact Us Page*/
+    .contact-banner {font-size: 1.2em;}
+        
+    /*Footer*/
+    footer {font-size: .8em;}
+    }
