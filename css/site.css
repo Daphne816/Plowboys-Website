@@ -451,12 +451,20 @@ footer {font-family: Cambria, "Liberation Serif", Times, "Times New Roman", "ser
 
     nav button:hover, nav button:focus {margin-bottom: .5rem;}
 
+    .navbar-toggler, .navbar-toggler:hover,
+    .navbar-toggler:focus {margin:0;
+                           padding-bottom: .5rem;
+			   box-shadow: none;}
+
     nav ul {text-align: center;
             box-shadow: none;}
 
     nav li {border-bottom: medium solid black;
             box-shadow: 0  8px 5px -8px black, 
                         0 -8px 5px -8px black;}
+
+    .nav-link:focus, .nav-link:hover {transform: scale(1.0);
+                                  text-shadow: 0 0 1px #333;}
 
     nav li:first-of-type {border-top: medium solid black;}
 
